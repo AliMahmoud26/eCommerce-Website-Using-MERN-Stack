@@ -1,0 +1,41 @@
+// Flex Center Mixin
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
+// Flex Justify Center Mixin
+@mixin flex-justify-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Flex Between Mixin
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// Flex Around Mixin
+@mixin flex-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+// Flex Direction Column Mixin
+@mixin flex-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+// Flex Center & Direction Column Mixin
+@mixin flex-column-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

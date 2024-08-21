@@ -1,0 +1,119 @@
+// Importing partials files
+@use '../Partials/variables' as *;
+@use '../Partials/mixins' as *;
+
+// Styling the navbar component
+nav {
+    width: 100%;
+    // padding: 0 4rem;
+    .nav-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+        box-shadow: $box-shadow-1;
+    
+        .nav-logo {
+            @include flex-center;
+            gap: .25rem;
+            cursor: pointer;
+
+            img {
+                width: 2.5rem;
+            }
+    
+            a {
+                color: $darkBlue;
+                font: {
+                    size: 1.25rem;
+                    weight: 600
+                }
+            }
+        }
+
+        .search-bar {
+            @include flex-center;
+            
+            input {
+                padding: .75rem 2rem;
+                font-weight: 500;
+                width: 35rem;
+                border: 2px solid $darkBlue;
+                outline: none;
+                border-top-left-radius: .5rem;
+                border-bottom-left-radius: .5rem;
+            }
+
+            .search-icon {
+                background-color: $darkBlue;
+                // color: $white;
+                padding: .57rem .75rem;
+                height: fit-content;
+                font-size: 1.25rem;
+                border-top-right-radius: .5rem;
+                border-bottom-right-radius: .5rem;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+
+        .login-cart {
+            @include flex-center;
+            position: relative;
+            gap: 1rem;
+
+            img {
+                cursor: pointer;
+            }
+
+            .nav-cart-count {
+                @include flex-justify-center;
+                position: absolute;
+                top: 20%;
+                left: 84%;
+                width: 1.25rem;
+                height: 1.25rem;
+                // margin-top: -2.5rem;
+                // margin-left: -1.875rem;
+                border-radius: .75rem;
+                font-size: .875rem;
+                font-weight: bolder;
+                color: red;
+                // background-color: red;
+                // color: $white;
+            }
+        }
+    }
+
+    .nav-links {
+        // margin-top: .75rem;
+        background-color: $darkBlue;
+        padding: .25rem .5rem;
+        box-shadow: $box-shadow-1;
+
+        .nav-menu {
+            @include flex-center;
+            gap: 1rem;
+
+            li {
+                a {
+                    color: $white;
+                    padding: 1rem .5rem;
+                    border: 1px solid $darkBlue;
+                    // transition: $transition;
+
+                    &.first {
+                        @include flex-center;
+                        gap: .25rem;
+                    }
+
+                    &:hover {
+                        border: 1px solid $white;
+                    }
+                }
+            }
+        }
+    }
+}

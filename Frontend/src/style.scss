@@ -1,5 +1,7 @@
 // Importing partials files
-
+@use './Sass/Partials/globals';
+@use './Sass/Partials/variables' as *;
+@use './Sass/Partials/mixins' as *;
 
 // Importing component files
-@use './Sass/Components/Navbar.scss'
+@use './Sass/Components/navbar';
