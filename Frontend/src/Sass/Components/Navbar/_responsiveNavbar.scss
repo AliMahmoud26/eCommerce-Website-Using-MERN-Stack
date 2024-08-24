@@ -270,12 +270,10 @@
                         font-size: .75rem;
                     }
 
-                    @include breakpoint-down(medium) {
+                    @include breakpoint-down(small) {
                         top: 14%;
                         left: 30%;
                         font-size: .6rem;
-                        // width: .875rem;
-                        // height: .875rem;
                     }
                 }
             }
