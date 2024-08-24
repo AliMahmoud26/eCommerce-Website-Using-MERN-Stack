@@ -81,6 +81,7 @@
                     padding: .25rem .5rem;
                     box-shadow: $box-shadow-1;
                     transition: $transition;
+                    z-index: 999;
 
                     @include breakpoint-down(small) {
                         width: 80%;
@@ -127,7 +128,6 @@
 
                                 @include breakpoint-down(medium) {
                                     font-size: 1rem;
-                                    z-index: 100;
                                 }
                             }
                         }
