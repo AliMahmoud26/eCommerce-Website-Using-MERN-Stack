@@ -83,7 +83,7 @@
                     transition: $transition;
 
                     @include breakpoint-down(small) {
-                        width: 60%;
+                        width: 80%;
                     }
 
                     &.showNavbar {
@@ -112,7 +112,7 @@
                             a {
                                 position: relative;
                                 color: $white;
-                                // padding: 1rem .5rem;
+                                padding: 1rem .5rem;
                                 font-size: 1.125rem;
                                 transition: $transition;
             
@@ -126,7 +126,7 @@
                                 }
 
                                 @include breakpoint-down(medium) {
-                                    font-size: .875rem;
+                                    font-size: 1rem;
                                 }
                             }
                         }
