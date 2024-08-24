@@ -127,6 +127,7 @@
 
                                 @include breakpoint-down(medium) {
                                     font-size: 1rem;
+                                    z-index: 100;
                                 }
                             }
                         }
