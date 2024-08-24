@@ -82,6 +82,10 @@
                     box-shadow: $box-shadow-1;
                     transition: $transition;
 
+                    @include breakpoint-down(small) {
+                        width: 60%;
+                    }
+
                     &.showNavbar {
                         left: 0;
                     }
@@ -98,8 +102,13 @@
                         // gap: 1rem;
             
                         li {
-                            margin-top: 1.5rem;
+                            margin-top: 1.125rem;
+                            border-bottom: 2px solid $white;
 
+                            &:hover {
+                                border-bottom: 2px solid $dark;
+                            }
+                            
                             a {
                                 position: relative;
                                 color: $white;
@@ -114,6 +123,10 @@
                                 
                                 &:hover {
                                     color: $dark;
+                                }
+
+                                @include breakpoint-down(medium) {
+                                    font-size: .875rem;
                                 }
                             }
                         }
