@@ -1,15 +1,15 @@
 // Importing partials files
-@use '../Partials/variables' as *;
-@use '../Partials/mixins' as *;
+@use '../../Partials/variables' as *;
+@use '../../Partials/mixins' as *;
 
 // Styling the navbar component
-nav {
+.desktop-nav {
     background-color: $blue;
     width: 100%;
     // padding: 0 4rem;
     .nav-header {
         @include flex-between;
-        padding: 1rem 3rem;
+        padding: 1rem 2rem;
         box-shadow: $box-shadow-1;
     
         .nav-logo {
