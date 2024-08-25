@@ -59,6 +59,7 @@
                     position: relative;
                     color: $white;
                     font-size: 1.5rem;
+                    cursor: pointer;
 
                     @include breakpoint-down(medium) {
                         font-size: 1.25rem;
@@ -84,7 +85,7 @@
                     z-index: 999;
 
                     @include breakpoint-down(small) {
-                        width: 80%;
+                        width: 70%;
                     }
 
                     &.showNavbar {
@@ -95,7 +96,8 @@
                         color: $white;
                         font-size: 1.5rem;
                         margin: 1rem 1rem 0 0;
-                        align-self: flex-end
+                        align-self: flex-end;
+                        cursor: pointer;
                     }
             
                     .nav-menu {
@@ -105,30 +107,37 @@
                         li {
                             margin-top: 1.125rem;
                             border-bottom: 2px solid $white;
-
-                            &:hover {
-                                border-bottom: 2px solid $dark;
-                            }
+                            position: relative;
+                            font-size: 1.125rem;
                             
-                            a {
-                                position: relative;
-                                color: $white;
+                            > .nav-items {
                                 padding: 1rem .5rem;
-                                font-size: 1.125rem;
+                                color: $white;
                                 transition: $transition;
-            
-                                &.first {
-                                    @include flex-center;
-                                    column-gap: .25rem;
-                                }
-                                
+
                                 &:hover {
                                     color: $dark;
                                 }
+                            }
+                            
+                            > .first {
+                                @include flex-center;
+                                gap: .25rem;
+                                color: $white;
+                                transition: $transition;
 
-                                @include breakpoint-down(medium) {
-                                    font-size: 1rem;
+                                &:hover {
+                                    color: $dark;
                                 }
+                            }
+                            
+
+                            @include breakpoint-down(medium) {
+                                font-size: 1rem;
+                            }
+
+                            &:hover {
+                                border-bottom: 2px solid $dark;
                             }
                         }
                     }
